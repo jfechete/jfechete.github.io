@@ -1,0 +1,10 @@
+div.background {
+    height: 100vh;
+    background-color: #303030;
+    margin: 0px;
+}
+
+body {
+    background-color: #303030;
+    margin: 0px;
+}
