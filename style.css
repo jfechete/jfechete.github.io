@@ -1,10 +1,48 @@
+.flex-container-r, .flex-container-c, .flex-container-d {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container-r {
+    flex-direction: row;
+}
+
+.flex-container-c {
+    flex-direction: column;
+}
+
+.flex-container-d {
+    flex-direction: row;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .flex-container-d {
+        flex-direction: column;
+    }
+}
+
+.account-link {
+    font-size: 3em;
+    text-align: center;
+    margin: 5%;
+}
+
 div.background {
     height: 100vh;
     background-color: #303030;
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #303030;
     margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #DDDDDD;
 }
