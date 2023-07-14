@@ -21,6 +21,22 @@
     }
 }
 
+.next-page-arrow {
+    height: 20vh;
+    margin: 10px;
+}
+
+/*
+Used for mobile for when the address or bottom bar is shown.
+I considered using dvh instead for background,
+but I didn't like how the elemnts shifted as you scrolled.
+*/
+@media (max-aspect-ratio: 1/1) {
+    .next-page-arrow {
+        margin-bottom: 20vh;
+    }
+}
+
 .account-link {
     font-size: 3em;
     text-align: center;
