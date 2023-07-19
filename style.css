@@ -43,19 +43,58 @@ but I didn't like how the elemnts shifted as you scrolled.
     margin: 5%;
 }
 
+.portfolio-arrow {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: calc(10vw - 40px);
+    right: -100vw;
+}
+
+.portfolio-div {
+    position: absolute;
+    left: 10vw;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.portfolio-vid {
+    width: 100%;
+    max-height: 60%;
+}
+
+.loading-display {
+    background-color: #E8f60A;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 10vw;
+    padding-top: 5%;
+    z-index: 10;
+}
+
 div.background {
     height: 100vh;
     background-color: #303030;
     margin: 0px;
+    position: relative;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #303030;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 h1 {
