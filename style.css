@@ -64,6 +64,20 @@ but I didn't like how the elemnts shifted as you scrolled.
     max-height: 60%;
 }
 
+.min-portfolio-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.min-portfolio-item {
+    display: flex;
+    flex-flow: column;
+    width: 20em;
+    max-width: 20em;
+    margin: 2vw;
+}
+
 .loading-display {
     background-color: #E8f60A;
     position: absolute;
@@ -80,7 +94,8 @@ but I didn't like how the elemnts shifted as you scrolled.
 }
 
 div.background {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-color: #303030;
     margin: 0px;
     position: relative;
@@ -100,4 +115,8 @@ body {
 h1 {
     text-align: center;
     color: #DDDDDD;
+}
+
+h3 {
+    text-align: center;
 }
