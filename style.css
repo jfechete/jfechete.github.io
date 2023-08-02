@@ -96,7 +96,7 @@ but I didn't like how the elemnts shifted as you scrolled.
 div.background {
     min-height: 100vh;
     height: auto;
-    background-color: #303030;
+    background-color: #E0E0E0;
     margin: 0px;
     position: relative;
 }
@@ -114,7 +114,6 @@ body {
 
 h1 {
     text-align: center;
-    color: #DDDDDD;
 }
 
 h3 {
