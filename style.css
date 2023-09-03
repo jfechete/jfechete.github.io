@@ -40,7 +40,7 @@ but I didn't like how the elemnts shifted as you scrolled.
 .account-link {
     font-size: 3em;
     text-align: center;
-    margin: 5%;
+    margin-left: 0 5%;
 }
 
 .portfolio-arrow {
@@ -93,6 +93,11 @@ but I didn't like how the elemnts shifted as you scrolled.
     z-index: 10;
 }
 
+.portfolio-strip {
+    height: 200px;
+    position: relative;
+}
+
 div.background {
     min-height: 100vh;
     height: auto;
@@ -115,6 +120,7 @@ body {
 h1 {
     text-align: center;
     color: #DDDDDD;
+    margin: 0;
 }
 
 h3 {
