@@ -59,10 +59,18 @@ function mod(a,b) {
 }
 
 setInterval(updateVideos, 1000/30);
+let prevScroll = window.onscroll;
 window.onscroll = function() {
+    if (prevScroll != null) {
+        prevScroll();
+    }
     updateArrows();
 }
+let prevLoad = window.onload;
 window.onload = function() {
+    if (prevLoad != null) {
+        prevLoad();
+    }
     let loadingPrompts = document.getElementsByClassName("loading-display");
     for (let i = 0; i < loadingPrompts.length; i++) {
         loadingPrompts[i].remove();
