@@ -22,7 +22,7 @@
 }
 
 .next-page-arrow {
-    height: 20vh;
+    height: 8vh;
     margin: 10px;
 }
 
@@ -41,13 +41,15 @@ but I didn't like how the elemnts shifted as you scrolled.
     font-size: 3em;
     text-align: center;
     margin-left: 0 5%;
+    /* don't change color when clicked */
+    color: blue;
 }
 
 .portfolio-arrow {
     position: fixed;
     top: 50vh;
     transform: translateY(-50%);
-    width: calc(10vw - 40px);
+    width: calc(5vw - 40px);
     right: -100vw;
 }
 
@@ -101,9 +103,12 @@ but I didn't like how the elemnts shifted as you scrolled.
 div.background {
     min-height: 100vh;
     height: auto;
-    background-color: #E0E0E0;
+    background-color: #808B8C;
     margin: 0px;
     position: relative;
+}
+div.background:nth-child(even) {
+    background-color: #96A4A5;
 }
 
 html {
