@@ -142,9 +142,24 @@ but I didn't like how the elemnts shifted as you scrolled.
 .min-portfolio-item {
     display: flex;
     flex-flow: column;
-    width: 20em;
-    max-width: 20em;
+    width: 25vw;
     margin: 2vw;
+    background-color: var(--bg-even);
+    padding: 5px;
+    filter: drop-shadow(5px 5px var(--border-color));
+}
+
+.min-portfolio-item>p {
+    font-size: 1.25em;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .min-portfolio-item {
+        width: 90vw;
+    }
+    .min-portfolio-item>p {
+        font-size: 1.5em;
+    }
 }
 
 .loading-display {
@@ -227,6 +242,7 @@ h1 span {
     padding: 10px;
     font-size: 7vw;
 }
+
 @media (max-aspect-ratio: 1/1) {
     h1 span {
         font-size: 15vw;
@@ -238,4 +254,5 @@ h1 span {
 
 h3 {
     text-align: center;
+    font-size: 2em;
 }
