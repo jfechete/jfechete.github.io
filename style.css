@@ -72,8 +72,9 @@ but I didn't like how the elemnts shifted as you scrolled.
     position: fixed;
     top: 50vh;
     transform: translateY(-50%);
-    width: calc(5vw - 40px);
+    width: 5vw;
     right: -100vw;
+    z-index: 1;
 }
 
 .portfolio-div {
@@ -84,9 +85,52 @@ but I didn't like how the elemnts shifted as you scrolled.
     justify-content: center;
 }
 
-.portfolio-vid {
+.portfolio-div>div {
+    width: 96%;
+    height: 56%;
+    padding: 2%;
+    border: 2px solid var(--border-color);
+}
+
+.portfolio-div>div>video {
     width: 100%;
-    max-height: 60%;
+    height: 100%;
+}
+
+.portfolio-div>p {
+    background-color: var(--bg-even);
+    position: relative;
+    margin: 0px;
+    width: 90%;
+    left: 4%;
+    bottom: 1.5%;
+    padding: 1%;
+    font-size: 1.5em;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .portfolio-div {
+        width: 95vw;
+        left: 2.5;
+    }
+    .portfolio-arrow {
+        top: 75vh;
+        width: 10vw;
+    }
+    .portfolio-div>div {
+        width: 100%;
+        height: 66vh;
+        padding: 2vh 0;
+        border: none;
+    }
+
+    .portfolio-div>p {
+        width: 75%;
+        height: 30vh;
+        left: 0;
+        bottom: 0;
+        padding: 0 12.5%;
+    }
 }
 
 .min-portfolio-div {
