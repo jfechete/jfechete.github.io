@@ -1,3 +1,10 @@
+:root {
+    --bg-odd: #808B8C;
+    --bg-odd-split: 128, 139, 140;
+    --bg-even: #96A4A5;
+    --border-color: #2D3644;
+}
+
 .flex-container-r, .flex-container-c, .flex-container-d {
     display: flex;
     justify-content: space-between;
@@ -21,9 +28,22 @@
     }
 }
 
+.title-border {
+    position: absolute;
+    top: 3.5vw;
+    bottom: calc(4vh + 10px);
+    left: 2vw;
+    right: 2vw;
+
+    box-sizing: border-box;
+    border: 2px solid var(--border-color);
+    z-index: -1;
+}
+
 .next-page-arrow {
     height: 8vh;
     margin: 10px;
+    background-color: var(--bg-odd);
 }
 
 /*
@@ -34,6 +54,9 @@ but I didn't like how the elemnts shifted as you scrolled.
 @media (max-aspect-ratio: 1/1) {
     .next-page-arrow {
         margin-bottom: 20vh;
+    }
+    .title-border {
+        bottom: 24vh;
     }
 }
 
@@ -98,17 +121,45 @@ but I didn't like how the elemnts shifted as you scrolled.
 .portfolio-strip {
     height: 200px;
     position: relative;
+    z-index: -3;
+}
+
+.strip-fade-left, .strip-fade-right {
+    position: absolute;
+    height: 200px;
+    width: 8vw;
+    z-index: -2;
+}
+
+.strip-fade-left {
+    background-image: linear-gradient(
+        to right,
+        rgba(var(--bg-odd-split), 1),
+        rgba(var(--bg-odd-split), 1),
+        rgba(var(--bg-odd-split), 0)
+    );
+    left: 0;
+}
+.strip-fade-right {
+    background-image: linear-gradient(
+        to left,
+        rgba(var(--bg-odd-split), 1),
+        rgba(var(--bg-odd-split), 1),
+        rgba(var(--bg-odd-split), 0)
+    );
+    right: 0;
 }
 
 div.background {
     min-height: 100vh;
     height: auto;
-    background-color: #808B8C;
+    background-color: var(--bg-odd);
     margin: 0px;
     position: relative;
+    z-index: 1;
 }
 div.background:nth-child(even) {
-    background-color: #96A4A5;
+    background-color: var(--bg-even);
 }
 
 html {
@@ -125,6 +176,20 @@ body {
 h1 {
     text-align: center;
     margin: 0;
+}
+
+h1 span {
+    background-color: var(--bg-odd);
+    padding: 10px;
+    font-size: 7vw;
+}
+@media (max-aspect-ratio: 1/1) {
+    h1 span {
+        font-size: 15vw;
+    }
+    .title-border {
+        top: 7.5vw;
+    }
 }
 
 h3 {
