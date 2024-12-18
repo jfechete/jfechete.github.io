@@ -43,7 +43,7 @@
                     </video>
                 </div>
                 <p>
-                    This is a program I started after getting a CNC machine. It creates .nc files from pictures, which are files that the CNC machine can use to be able to carve different shapes. I created it to learn more about how CNC machines work and to be able to easily engrave things. It accepts input as an image and can create a shape either by tracing the edges of colors, by tracing the center of lines, or by using the image as a heightmap.
+                    This is a program I started after getting a CNC machine. It creates .nc files from pictures, which are files that the CNC machine can use to be able to carve different shapes. I created it to learn more about how CNC machines work and to be able to easily engrave things. It accepts input as an image and can create a shape either by tracing the edges of colors, by tracing the center of lines, or by using the image as a heightmap. <a href="https://github.com/jfechete/NCGenerator">source code</a>
                 </p>
             </div>
             <div class="portfolio-div flex-container-c">
@@ -53,7 +53,7 @@
                     </video>
                 </div>
                 <p>
-                    This is a mobile application I created for a school project. It is a budgeting application to help users manage their spending. The settings tab allows the user to add or remove different budget categories. The spending tab is designed to allow users to quickly set the amount spent on an expense and drag it into its correct category. The statistics tab shows graphs of current and previous months, displaying how much they've spent so far and the predicted amount that will be spent over time.
+                    This is a mobile application I created for a school group project. It is a budgeting application to help users manage their spending. The settings tab allows the user to add or remove different budget categories. The spending tab is designed to allow users to quickly set the amount spent on an expense and drag it into its correct category. The statistics tab shows graphs of current and previous months, displaying how much they've spent so far and the predicted amount that will be spent over time. <a href="https://github.com/fechetejSPU/CSC3220_T1">source code</a>
                 </p>
             </div>
             <div class="portfolio-div flex-container-c">
@@ -71,18 +71,39 @@
             <div class="min-portfolio-div">
                 <div class="min-portfolio-item">
                     <h3>
-                        Sale Checker
+                        CalDAV Canvas Sync
                     </h3>
                     <p>
-                        This is a program I made when I wanted to buy something from an online website. I wrote a bot that would check if there was an active sale on the item, and if there was, it would connect to a messaging app that I use and send me a notification. From there, I set it up to run every day and use it whenever I find another item I want, in order to see when it goes on sale.
+                        This is a program I made to better connect various services I use. I have a CalDAV server that manages stuff like my calendar and to-do list. I have this connected to many of my devices so I am able to easily see my current schedule. In order to make it more comprehensive, I designed a script that connects to the Canvas LMS, which my school uses, and made it get a list of all my assignments and add them to my to-do list if they were not there already. This allowed me to more easily see my current assignments using the same system I was already used to.
                     </p>
+                    <a href="https://github.com/jfechete/CanvasCaldavSync">source code</a>
+                </div>
+                <div class="min-portfolio-item">
+                    <h3>
+                        AI Thumbnail Selector
+                    </h3>
+                    <p>
+                        This is a program I made to help select thumbnails for videos from my church. I had previously helped automate a lot of the work that was done with service recordings, such as backing them up, marking them in an archive file, and uploading them to the church website. One thing that still had to be done manually was select a frame from each video to use as the thumbnail. To help with this, I extracted many frames from various videos and manually labeled them, then used PyTorch to train different models that worked together to choose the optimal frame for a thumbnail. This took into account things like having a clear shot of someone's face, having their eyes open, having their mouth closed, etc. To help accomplish this, I also created an open-source GUI tool with keybindings to help quickly label various images, linked below.
+                    </p>
+                    <a href="https://github.com/jfechete/ImageLabeler">source code</a>
                 </div>
                 <div class="min-portfolio-item">
                     <h3>
                         3D Printer Time-lapse
                     </h3>
-                    <p>
+                    <div class="flex-container-r">
+                        <p>
                         This is a program I made for my 3D printer. After I got a file that gave the 3D printer instructions on how to print, I would feed it into this program, and it would modify it so that between every layer, it would move the printing head away from the model and trigger a camera to take a picture of the object being printed. All of these pictures would then be combined into a video in order to create a clean time-lapse video without having the print head blocking the object being printed at any point.
+                        </p>
+                        <img src="vids/3dprint.gif" alt="GIF of a visualization that was created"/>
+                    </div>
+                </div>
+                <div class="min-portfolio-item">
+                    <h3>
+                        Analytics System
+                    </h3>
+                    <p>
+                        This is a program I made for a game studio that I co-own. It's a program on a server that all of our games connect to, where they send different analytical data about the game. The program then aggregates all the data and presents it to us in an easy-to-understand way. We have used this data to identify which parts of the game are too easy or difficult for players and have adjusted it to be more balanced.
                     </p>
                 </div>
                 <div class="min-portfolio-item">
@@ -95,22 +116,6 @@
                 </div>
                 <div class="min-portfolio-item">
                     <h3>
-                        Device Sleeping
-                    </h3>
-                    <p>
-                        This is a program I made because I have some devices around my house connected to the Wi-Fi, which I turn on to use sometimes. However, I sometimes forgot to turn them back off, and they would run all night, which could reduce their lifespan. To fix this, I created a program on a device that was always on and at midnight would connect to my other devices, and if it detected that they were on, it would put them to sleep, so they wouldn't remain on if I forgot about them.
-                    </p>
-                </div>
-                <div class="min-portfolio-item">
-                    <h3>
-                        Analytics System
-                    </h3>
-                    <p>
-                        This is a program I made for a game studio that I co-own. It's a program on a server that all of our games connect to, where they send different analytical data about the game. The program then aggregates all the data and presents it to us in an easy-to-understand way. We have used this data to identify which parts of the game are too easy or difficult for players and have adjusted it to be more balanced.
-                    </p>
-                </div>
-                <div class="min-portfolio-item">
-                    <h3>
                         Game Communication Bot
                     </h3>
                     <p>
@@ -119,18 +124,18 @@
                 </div>
                 <div class="min-portfolio-item">
                     <h3>
-                        CalDAV Canvas Sync
+                        Sale Checker
                     </h3>
                     <p>
-                        This is a program I made to better connect various services I use. I have a CalDAV server that manages stuff like my calendar and to-do list. I have this connected to many of my devices so I am able to easily see my current schedule. In order to make it more comprehensive, I designed a script that connects to the Canvas LMS, which my school uses, and made it get a list of all my assignments and add them to my to-do list if they were not there already. This allowed me to more easily see my current assignments using the same system I was already used to.
+                        This is a program I made when I wanted to buy something from an online website. I wrote a bot that would check if there was an active sale on the item, and if there was, it would connect to a messaging app that I use and send me a notification. From there, I set it up to run every day and use it whenever I find another item I want, in order to see when it goes on sale.
                     </p>
                 </div>
                 <div class="min-portfolio-item">
                     <h3>
-                        AI Thumbnail Selector
+                        Device Sleeping
                     </h3>
                     <p>
-                        This is a program I made to help select thumbnails for videos from my church. I had previously helped automate a lot of the work that was done with service recordings, such as backing them up, marking them in an archive file, and uploading them to the church website. One thing that still had to be done manually was select a frame from each video to use as the thumbnail. To help with this, I extracted many frames from various videos and manually labeled them, then used PyTorch to train different models that worked together to choose the optimal frame for a thumbnail. This took into account things like having a clear shot of someone's face, having their eyes open, having their mouth closed, etc.
+                        This is a program I made because I have some devices around my house connected to the Wi-Fi, which I turn on to use sometimes. However, I sometimes forgot to turn them back off, and they would run all night, which could reduce their lifespan. To fix this, I created a program on a device that was always on and at midnight would connect to my other devices, and if it detected that they were on, it would put them to sleep, so they wouldn't remain on if I forgot about them.
                     </p>
                 </div>
             </div>

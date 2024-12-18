@@ -149,16 +149,30 @@ but I didn't like how the elemnts shifted as you scrolled.
     filter: drop-shadow(5px 5px var(--border-color));
 }
 
-.min-portfolio-item>p {
+.min-portfolio-item p {
     font-size: 1.25em;
+}
+.min-portfolio-item a {
+    font-size: 1.25em;
+    text-align: center;
+}
+.min-portfolio-item img {
+    width: 10vw;
+    height: auto;
 }
 
 @media (max-aspect-ratio: 1/1) {
     .min-portfolio-item {
         width: 90vw;
     }
-    .min-portfolio-item>p {
+    .min-portfolio-item p {
         font-size: 1.5em;
+    }
+    .min-portfolio-item a {
+        font-size: 1.5em;
+    }
+    .min-portfolio-item img {
+        width: 20vw;
     }
 }
 
