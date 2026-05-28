@@ -152,7 +152,7 @@ but I didn't like how the elemnts shifted as you scrolled.
 .min-portfolio-item p {
     font-size: 1.25em;
 }
-.min-portfolio-item a {
+.min-portfolio-item > a {
     font-size: 1.25em;
     text-align: center;
 }
